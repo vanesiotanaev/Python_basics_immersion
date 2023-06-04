@@ -5,7 +5,7 @@ SPACE = ' '
 
 spike_quantity = 1
 min_part = 3
-user_numb = int(input("Введите числовое значение, соответствующее высоте ёлочки: "))
+user_numb = int(input("Введите числовое значение, соответствующее высоте ёлочки (количество частей): "))
 max_part = user_numb + 2
 
 while min_part <= max_part:
