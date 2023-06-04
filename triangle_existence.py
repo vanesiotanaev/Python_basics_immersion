@@ -8,6 +8,7 @@ c_side = float(input('Введите длину стороны c: '))
 
 if (a_side > b_side + c_side) or (b_side > a_side + c_side) or (c_side > a_side + b_side):
     print('Такого треуголника не существует!')
+    
 else:
     print('Треугольник существует!')
     if a_side == b_side == c_side:
