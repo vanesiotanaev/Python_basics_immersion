@@ -42,6 +42,8 @@ class ATM:
     
     # Метод для пополнения счета.
     def replenish(self) -> None:
+        print()
+        print(f"Ваш текущий баланс: {self.balance}")
         self.wealth_tax = Decimal(self.wealth_tax).quantize(Decimal('0.00'), rounding=ROUND_DOWN)
         tax_value = 0
 
@@ -66,11 +68,12 @@ class ATM:
             self.balance = (Decimal(self.balance) + Decimal(self.balance)
                             * Decimal(self.add_percentage)).quantize(Decimal('0.00'), rounding=ROUND_DOWN)
 
-        print(
-            f"Баланс пополнен успешно! Текущее значение баланса: {self.balance}")
+        print(f"Баланс пополнен успешно! Текущее значение баланса: {self.balance}")
 
     # Метод для снятия средств.
     def withdraw(self) -> None:
+        print()
+        print(f"Ваш текущий баланс: {self.balance}")
         self.wealth_tax = Decimal(self.wealth_tax).quantize(Decimal('0.00'), rounding=ROUND_DOWN)
         tax_value = 0
 
