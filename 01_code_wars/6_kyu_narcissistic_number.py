@@ -27,6 +27,7 @@ def narcissistic(user_value: int) -> bool:
 
     for i in range(len(digits_list)):
         digits_list[i] = digits_list[i] ** digits_quantity
+        
     result = sum(digits_list)
     
     if int(user_value) == result:
